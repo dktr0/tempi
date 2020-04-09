@@ -13,7 +13,7 @@ Build-type:          Simple
 cabal-version:       >=1.10
 tested-with:         GHC == 8.6.3
 
-Description: A library for representing musical tempi, with a basic representation consisting of three orthogonal components (frequency,time,count of elapsed cycles/beats). Basic purpose is to allow multiple Haskell-based live coding languages to share a common representation of tempo.
+Description: A Haskell library for representing musical tempi, with a basic representation consisting of three orthogonal components (frequency,time,count of elapsed cycles/beats). Basic purpose is to allow multiple Haskell-based live coding languages to share a common representation of tempo.
 
 library
   ghc-options: -Wall

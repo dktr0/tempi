@@ -27,6 +27,7 @@ library
 
   Build-depends:
       base >=4.8 && <5
+      time >=1.8.02 && <1.9
 
 source-repository head
   type:     git

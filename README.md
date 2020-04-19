@@ -14,4 +14,5 @@ David Ogborn
 
 # Changelog
 
+1.0.1.0 -- added findBeats,findBeats',nextBeat 
 1.0.0.0 -- initial version

@@ -62,7 +62,7 @@ findBeats :: Tempo -> UTCTime -> UTCTime -> Rational -> Rational -> [Rational]
 findBeats tempo lowerLimitUtc upperLimitUtc metre offset =
   let lowerLimitCycles = timeToCount tempo lowerLimitUtc
       upperLimitCycles = timeToCount tempo upperLimitUtc
-  in findBeats' offset metre lowerLimitCycles upperLimitCycles
+  in findBeats' metre offset lowerLimitCycles upperLimitCycles
 
 -- | Given a metre and offset (eg. 2 and 0.5 to represent half-way through the first cycle
 -- of a metre lasting 2 cycles), and lower and upper limits in elapsed cycles, findBeats'

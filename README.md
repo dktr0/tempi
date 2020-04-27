@@ -14,6 +14,7 @@ David Ogborn
 
 # Changelog
 
+1.0.2.0 -- added Data.Tempo.Random
 1.0.1.1 -- bug fix in implementation of findBeats
 1.0.1.0 -- added findBeats,findBeats',nextBeat
 1.0.0.0 -- initial version

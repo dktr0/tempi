@@ -82,10 +82,10 @@ nextBeat :: Rational -> Rational -> Rational -> Rational
 nextBeat metre offset lowerLimit
   | metre == 0 = error "you can't have a metre of 0!!!"
   | otherwise =
-  let fract x = x - realToFrac (floor x) -- for convenience
+  let fract x = x - realToFrac (floor x :: Integer) -- for convenience
       lowerLimitInMetre = lowerLimit/metre -- lower limit expressed in multiples of the metre (cycles of cycles)
       offsetInMetre = fract $ offset/metre -- offset expressed in multiples of the metre
       -- the answer occurs either in this instance of the metre, or the next...
-      nextBeatInMetre | offsetInMetre >= (fract lowerLimitInMetre) = (realToFrac $ floor lowerLimitInMetre) + offsetInMetre
-                      | otherwise = (realToFrac $ ceiling lowerLimitInMetre) + offsetInMetre
+      nextBeatInMetre | offsetInMetre >= (fract lowerLimitInMetre) = (realToFrac (floor lowerLimitInMetre :: Integer)) + offsetInMetre
+                      | otherwise = (realToFrac (ceiling lowerLimitInMetre :: Integer)) + offsetInMetre
   in nextBeatInMetre*metre -- translate answer in terms of meter back to cycles

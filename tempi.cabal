@@ -1,5 +1,5 @@
 name:                tempi
-version:             1.0.2.0
+version:             1.0.2.1
 synopsis:            For representing musical tempi
 homepage:            http://github.com/dktr0/tempi
 license:             BSD3
@@ -28,7 +28,7 @@ library
 
   Build-depends:
       base >=4.8 && <5,
-      time >=1.8.0.2 && <1.9
+      time >=1.8.0.2 && <1.13
 
 source-repository head
   type:     git
